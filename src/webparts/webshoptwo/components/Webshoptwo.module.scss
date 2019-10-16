@@ -1,0 +1,270 @@
+@import '~office-ui-fabric-react/dist/sass/References.scss';
+
+.webShopTwo {
+  
+  .container {
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+    background-color: rgb(249, 255, 255);
+    border: solid 4px rgba(255, 217, 0, 0.8);
+    display: inline-block;
+
+    .product{
+      margin: 10px;
+      color: rgb(68, 68, 68);
+      
+
+      .topper{
+        width: 100%;
+        display: inline-block;
+        padding-bottom: 20px;
+        div{
+          padding-left: 20px;
+
+          h1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 45px;
+            padding-left: 10px;
+          }
+        }
+
+        .order{
+
+          span{
+            font-size: 18px;
+            padding: 5px;
+            border: 3px solid rgb(249, 255, 255);
+          }
+
+          span:hover{
+            cursor: pointer;
+            border: 5px solid rgba(255, 218, 9, 0.75);
+            border-radius: 3px;
+            font-weight: bold;
+          }
+        }
+      }
+
+      .flexProd{
+
+// .flexProd:nth-child(even){
+//   border-top: solid 3px rgba(21, 212, 187, 0.1);
+//   border-left: solid 3px rgba(21, 212, 187, 0.1);
+// }
+        
+        .boxProduct{
+          border-bottom: solid 1px rgba(21, 212, 187, 0.1);
+          border-left: solid 1px rgba(21, 212, 187, 0.1);
+          position: relative;
+          height: 152px;
+          border-radius: 4px;
+          width: 20%;
+          min-width: 130px;
+          margin: 10px;
+          margin-top: 15px;
+          margin-bottom: 35px;
+          box-sizing: border-box;
+          float: left;
+
+          span{
+            position: relative;
+            height: 105px;
+            display: inline-block;
+            width: 100%;
+            margin: 0 auto;
+            overflow: hidden; 
+
+            img{
+              box-sizing: border-box;
+              position: absolute;
+              left: 0;
+              right: 0;
+              top:0;
+              bottom:0;
+              margin: auto;
+              width: auto;
+              height: auto;
+              max-height: 100px;
+              max-width: 130px;
+            }
+          }
+
+          .textBox{
+            position: absolute; bottom: 3px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow light', sans-serif;
+            height: 35px;
+            width: 100%;
+
+            p{
+              width: 100%;
+              margin: 0 auto;
+              text-align: center;
+            }
+          }
+
+          .hidden{
+            position: relative; bottom: 117px; right: 8px;
+            width: 100%;
+            height: 100%;
+
+            .addBasket{
+              border-radius: 4px;
+              border: solid 6px rgba(255, 219, 13, 0.8);
+              width: 100%;
+              height: 100%;
+              background: rgba(172, 170, 153, 0.295);
+              overflow: hidden;
+        
+              .btnHidden{
+                font-weight: bold;
+                width: 100%;
+                height: 60px;
+                background: rgba(0, 0, 0, 0.5);  
+                color: rgba(245, 245, 245, 0.918);          
+                text-align: center;
+                font-size: 18px;
+                cursor: pointer;
+                border: none;
+              }
+        
+              .btnHidden:hover{
+                background: rgba(253, 253, 253, 0.3); 
+                box-shadow: 2px 30px 18px 2px rgba(68, 72, 73, 0.55);
+                color: rgba(51, 48, 48, 0.95);
+              }
+  
+              .btnHidden:focus{
+                outline: none;
+              }
+            }
+  
+          }
+
+        }
+
+        .boxProduct:hover{
+          border-top: solid 3px rgba(255, 219, 13, 0.3);
+          border-left: solid 3px rgba(255, 219, 13, 0.3);
+          box-shadow: 2px 2px 2px rgba(21, 212, 187, 0.4);
+          cursor: pointer;
+        }
+
+      }
+
+    }
+
+    .payUp{
+      width: 80%;
+      border: solid 4px rgba(255, 217, 0, 0.8);
+      border-radius: 4px;
+      padding: 5px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      margin-left: 10px;
+      display: inline-block;
+  
+      .totPrice{
+        width: 50%;
+        font-size: 20px;
+        padding: 6px;
+        margin: 5px;
+        border-radius: 4px;
+        background-color: rgb(247, 255, 255);
+        border: solid 2px rgb(255, 217, 0);
+      }
+  
+      .btnPay{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        box-shadow: none;
+        border: none;
+        font-size: 30px;
+        background-color: rgb(255, 217, 0);
+        padding: 7px;
+        margin: 5px;
+        border-radius: 4px;
+        color: rgb(68, 68, 68);
+      }
+
+      .btnPay:hover{
+        box-shadow: 3px 6px 1px rgba(21, 212, 187, 0.4);
+        cursor: pointer;
+        font-size: 31px;
+        padding: 6px;
+        
+      }
+
+      .btnPay:focus{
+        outline: none;
+      }
+
+      .btnPay:active{
+        font-size: 30px;
+      }
+
+    }
+
+    .emptyBasket{
+      font-size: 17px;
+      font-weight: bold;
+      margin: 10px;
+      margin-left: 35px;
+      margin-top: 120px;
+    }
+
+    .myDialog{
+      position: fixed; top: 40%; left: 30%;
+      margin: auto;
+
+      div{
+        display: inline-block;
+        width: 90%;
+        height: 60%;
+        border-radius: 4px;
+        background-color: rgba(44, 44, 44, 0.8);
+        text-align: center;
+
+        .diaText{
+          display: inline-block;
+          font-size: 28px;
+          color: rgb(249, 255, 255);
+          margin: 10px;
+          padding: 10px;
+          width: 80%;
+          height: 100%;
+          box-sizing: border-box;
+        }
+
+        .diaBtn {
+          position: relative; right: 7px;
+          button{
+            position: absolute;
+            box-shadow: none;
+            border: none;
+            font-size: 18px;
+            background-color: rgb(255, 217, 0);
+            padding: 3px;
+            padding-top: 0;
+            padding-bottom: 0;
+            margin: 5px;
+            margin-bottom: 0;
+            border-radius: 4px;
+            color: rgb(68, 68, 68);
+          }
+
+          button:focus{
+            outline: none;
+          }
+          button:hover{
+            font-weight: bold;
+            padding: 2px;
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+
+        }
+
+      }
+    }
+  }
+  
+}
